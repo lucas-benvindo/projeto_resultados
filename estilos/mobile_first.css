@@ -8,16 +8,20 @@
     --yellow: hsl(39, 100%, 56%);
     --green: hsl(166, 100%, 37%);
     --blue: hsl(234, 85%, 45%);
+    --redpastel: hsla(0, 100%, 67%, 0.1);
+    --yellowpastel: hsla(39, 100%, 56%, 0.1);
+    --greenpastel: hsla(166, 100%, 37%, 0.1);
+    --bluepastel: hsla(234, 85%, 45%, 0.1);
 
     /*GRADIENTS*/
     --gd01: hsl(252, 100%, 67%);
     --gd02: hsl(241, 81%, 54%);
     --gd03: hsla(256, 72%, 46%, 1);
-    --gd04: hsla(241, 72%, 46%, 0);
 
     /*NEUTRAL*/
     --nt01: hsl(221, 100%, 96%);
     --nt02: hsl(241, 100%, 89%);
+    --nt02_: hsla(241, 100%, 89%, 0.619);
     --nt03: hsl(224, 30%, 27%);
 
     /*FONT*/
@@ -32,29 +36,105 @@
 
 main{
     font-family: var(--font);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 section#result{
     background-image: linear-gradient(to bottom, var(--gd01),var(--gd02), var(--gd03));
     color: var(--nt02);
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 30px 30px;
     padding: 20px;
     text-align: center;
 }
 
 p#pdestaque{
-    font-weight: 500;
+    font-weight: 700;
 }
 
 section#result > div{
     border-radius: 50%;
     background-image: linear-gradient(to top, var(--gd02), var(--gd03));
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     color: white;
     margin: 20px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
 }
+
+span#nota{
+    font-weight: 800;
+    font-size: 3em;
+}
+
+span#cem{
+    font-size: 15px;
+    color: var(--nt02_);
+    font-weight: 700;
+}
+
+h1{
+    color: white;
+    font-size: 23px;
+    font-weight: 700;
+    margin: 10px 0px 10px 0px
+}
+
+p#pfinal{
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-indent: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+section#sumarry{
+    padding: 20px 30px 30px 30px;
+}
+
+h2{
+    color: var(--nt03);
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+div#container{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.aptidoes{
+    border-radius: 10px;
+    height: 40px;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+div#reaction{
+    background-color: var(--redpastel);
+}
+
+div#memory{
+    background-color: var(--yellowpastel);
+}
+
+div#verbal{
+    background-color: var(--greenpastel);
+}
+
+div#visual{
+    background-color: var(--bluepastel);
+}
+
+
 
 
 
