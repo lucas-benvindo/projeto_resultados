@@ -1,2 +1,63 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    /*PRIMARY*/
+    --red: hsl(0, 100%, 67%);
+    --yellow: hsl(39, 100%, 56%);
+    --green: hsl(166, 100%, 37%);
+    --blue: hsl(234, 85%, 45%);
+
+    /*GRADIENTS*/
+    --gd01: hsl(252, 100%, 67%);
+    --gd02: hsl(241, 81%, 54%);
+    --gd03: hsla(256, 72%, 46%, 1);
+    --gd04: hsla(241, 72%, 46%, 0);
+
+    /*NEUTRAL*/
+    --nt01: hsl(221, 100%, 96%);
+    --nt02: hsl(241, 100%, 89%);
+    --nt03: hsl(224, 30%, 27%);
+
+    /*FONT*/
+    --font: "Hanken Grotesk", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: var(--font);
+    font-size: 18px;
+}
+
+section#result{
+    background-image: linear-gradient(to bottom, var(--gd01),var(--gd02), var(--gd03));
+    color: var(--nt02);
+    border-radius: 0px 0px 25px 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+p#pdestaque{
+    font-weight: 500;
+}
+
+section#result > div{
+    border-radius: 50%;
+    background-image: linear-gradient(to top, var(--gd02), var(--gd03));
+    height: 150px;
+    width: 150px;
+    color: white;
+    margin: 20px auto;
+}
+
+
+
+
+
+
